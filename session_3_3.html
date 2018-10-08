@@ -1,0 +1,72 @@
+<html>
+
+<script>
+
+function sum() 
+{
+	var z1 = document.getElementById('z1').value;
+	var z2 = document.getElementById('z2').value;
+	var z3 = document.getElementById('z3').value;
+	var sum;
+	
+	sum = parseInt(z1) + parseInt(z2) + parseInt (z3);
+	
+	document.getElementById("result").innerHTML = sum;
+	
+	}
+
+	
+	function multiply() 
+{
+	var z1 = document.getElementById('z1').value;
+	var z2 = document.getElementById('z2').value;
+	var z3 = document.getElementById('z3').value;
+	var multiply;
+	
+	multiply = parseInt(z1) * parseInt(z2) * parseInt (z3);
+	
+	document.getElementById("result").innerHTML = multiply;
+	
+	}
+	
+	function division() 
+{
+	var z1 = document.getElementById('z1').value;
+	var z2 = document.getElementById('z2').value;
+	//var z3 = document.getElementById('z3').value;
+	var division;
+	
+	division = parseInt(z1) / parseInt(z2) // + parseInt (z3);
+	
+	document.getElementById("result").innerHTML = division;
+	
+	}
+
+
+
+</script>
+
+
+
+
+
+<form>
+
+<input type="text" id="z1" value="" /> 
+<input type="text" id="z2" value="" /> 
+<input type="text" id="z3" value="" />
+
+</br>
+
+<input type="button" value="sum" onClick="sum();">
+<input type="button" value="multiply" onClick="multiply();">
+<input type="button" value="division" onClick="division();">
+
+<br/><br/>
+<b>Result</b> <div id="result">0</div>
+ 
+
+</form>
+
+
+</html>

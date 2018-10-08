@@ -1,0 +1,42 @@
+<html>
+
+<script>
+
+function sum() 
+{
+	var num1 = document.getElementById('num1').value;
+	var num2 = document.getElementById('num2').value;
+	var sum;
+	
+	sum = parseInt(num1) + parseInt(num2);
+	
+	alert(sum);
+	
+}
+
+function multiply() 
+{
+	var num1 = document.getElementById('num1').value;
+	var num2 = document.getElementById('num2').value;
+	var multiply;
+	
+	multiply = parseInt(num1) * parseInt(num2);
+	
+	alert(multiply);
+	
+}
+
+</script>
+
+<form>
+
+<input type="text" id="num1" value="" />
+<input type="text" id="num2" value="" />
+
+<input type="button" value="sum" onClick="sum();"> </br>
+<input type="button" value="multiply" onClick="multiply();">
+
+</form>
+
+
+</html>

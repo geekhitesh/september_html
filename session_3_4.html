@@ -1,0 +1,60 @@
+<html>
+
+<script>
+
+function calculator(operation) 
+{
+	var z1 = document.getElementById('z1').value;
+	var z2 = document.getElementById('z2').value;
+	var z3 = document.getElementById('z3').value;
+	var result;
+	
+	
+	if(operation == "sum")
+	{
+		result = parseInt(z1) + parseInt(z2) + parseInt (z3);
+	}
+	else if(operation == "division")
+	{
+		result = parseInt(z1) / parseInt(z2);
+	}
+	else if(operation == "multiply")
+	{
+		result = parseInt(z1) * parseInt(z2) * parseInt (z3);
+	}
+	else if(operation == "substraction")
+	{
+		result = parseInt(z1) - parseInt(z2);
+	}
+	
+	document.getElementById("result").innerHTML = result;
+	
+}
+
+
+</script>
+
+
+
+
+
+<form>
+
+<input type="text" id="z1" value="" /> 
+<input type="text" id="z2" value="" /> 
+<input type="text" id="z3" value="" />
+
+</br>
+
+<input type="button" value="sum" onClick="calculator('sum');">
+<input type="button" value="multiply" onClick="calculator(this.value);">
+<input type="button" value="division" onClick="calculator(this.value);">
+<input type="button" value="substraction" onClick="calculator(this.value);">
+<br/><br/>
+<b>Result</b> <div id="result">0</div>
+ 
+
+</form>
+
+
+</html>
